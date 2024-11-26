@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OCM Assist</title>
+    <link rel="stylesheet" href="c1.css">
+</head>
+<body>
+    <!-- Login Page -->
+    <div id="loginPage" class="login-page">
+        <div class="login-container">
+            <h1 class="login-title">Login</h1>
+            <form id="loginForm" class="login-form">
+                <input type="text" id="username" placeholder="Username" required class="login-input">
+                <input type="password" id="password" placeholder="Password" required class="login-input">
+                <button type="submit" class="login-button">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Main Page (Shirt Color Matcher) -->
+    <div id="mainPage" class="wrapper" style="display: none;">
+        <div class="container">
+            <h1 class="title">OCM Assistant</h1>
+            <p class="description">Outfit and Colour Matching Assistant</p>
+            
+            <input type="file" id="shirtImage" accept="image/*" class="file-input">
+            <canvas id="canvas" style="display:none;"></canvas>
+            
+            <div id="output">
+                <h2>Dominant  Color:</h2>
+                <div id="shirtColorDisplay" class="color-box"></div>
+
+                <h2>Recommended  Colors:</h2>
+                <ul id="pantsRecommendations" class="pants-list"></ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="c1.js"></script>
+</body>
+</html>
